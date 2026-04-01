@@ -70,7 +70,7 @@ def battery_operation(i, P_RES, P_goal, Capacity, SOC_old, SOH_old, Degr, SOC_da
 
 
     'daily degradation'
-    if (i+1) % kWh_factor*24 == 0:  
+    if (i+1) % (kWh_factor*24) == 0:  
         Degr = Battery_degradation_day(SOC_day, Degr)
 
     SOH_new = 1 - 0.3 * Degr
