@@ -251,7 +251,7 @@ def complete_sim(df_data, s):
         BESS_C_rate_D_list.append(C_rate_D)
         BESS_C_rate_day.append(C_rate_C + C_rate_D)
         
-        if (i+1) % kWh_factor*24 == 0:
+        if (i+1) % (kWh_factor*24) == 0:
             BESS_SOC_day    = [ ]                  #new day - new SOC profile for degradation assessment 
             BESS_C_rate_day = [ ]
         
